@@ -1,0 +1,138 @@
+body{
+  background-color: #F1F6F9;
+  margin: 0px;
+  color: #212A3E;
+}
+input, textarea{
+  color: #212A3E;
+}
+button{
+  background-color: #212A3E;
+  color: #F1F6F9;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+select{
+  color: #212A3E;
+}
+.export{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+}
+.TaskList>h1{
+  text-align: center;
+}
+.TaskForm{
+  width: 500px;
+  margin: 0px auto 20px;
+  padding: 0px 20px 20px;
+  text-align: center;
+  border: 1px solid #212A3E;
+}
+.TaskForm form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.TaskForm form input{
+  width: 100%;
+  font-size: 1rem;
+  height: 30px;
+} 
+.TaskForm form textarea{
+  width: 100%;
+  height: 60px;
+  font-size: 1rem;
+}
+.TaskForm form select{
+  width: 100px;
+  height: 30px;
+}
+.TaskForm button{
+  padding: 5px 20px;
+  height: 30px;
+  width: 100px;
+}
+.lists{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.lists .list{
+  width: 400px;
+  text-align: center;
+  height: fit-content;
+  margin: 20px 0px;
+  background-color: #212A3E;
+  color: #F1F6F9;
+  border-radius: 10px;
+  box-shadow: rgba(46, 59, 240, 0.4) 5px 5px, rgba(46, 59, 240, 0.3) 10px 10px, rgba(46, 59, 240, 0.3) 15px 15px, rgba(46, 59, 240, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  position: relative;
+}
+.lists .list::after{
+
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 60px solid transparent;
+  border-left: 60px solid #F1F6F9;
+}
+/* .list:first-child{
+  border-right: 1px solid #212A3E;
+}
+.list:last-child{
+  border-left: 1px solid #212A3E;
+} */
+.TaskCard{
+  padding: 10px 20px;
+  margin: 30px 20px;
+  text-align: left;
+  font-size: 1rem;
+  color: #212A3E;
+  background-color: #F1F6F9;
+  /*box-shadow: rgba(112, 216, 129, 0.4) 5px 5px, rgba(112, 216, 129, 0.3) 10px 10px, rgba(112, 216, 129, 0.3) 15px 15px, rgba(112, 216, 129, 0.1) 20px 20px, rgba(216, 112, 133, 0.05) 25px 25px;
+position: relative;*/
+}
+.TaskCard button{
+  margin-right: 20px;
+  height: 30px;
+  width: 100px;
+}
+.TaskCard select{
+  height: 30px;
+  width: 60px;
+}
+.TaskCard input{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  height: 30px;
+}
+@media screen and (max-width:768px){
+  .TaskList>h1{
+    margin-top: 70px;
+  }
+  .TaskForm{
+    width: 80vw;
+  }
+}
+@media screen and (max-width:450px){
+  .list button{
+    margin-bottom: 10px;
+  }
+  .lists .list{
+    width: 80%;
+  }
+}
+
+
+
+
